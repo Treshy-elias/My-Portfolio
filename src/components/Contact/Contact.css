@@ -1,0 +1,119 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-hand-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: cyan;
+    width: 500px;
+}
+.contact-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.p-head {
+    font-size: 22px;
+    color: rgb(221, 235, 235);
+    margin-bottom: 10px;
+}
+.contact-txt {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(59, 126, 126);
+}
+.email-no {
+    margin-bottom: 20px;
+}
+.contact-icon{
+    font-size: 30px;
+    margin: 0 6px ;
+}
+.right-hand-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin-right: 50px;
+    flex-direction: column;
+
+}
+.right-header {
+    font-size: 30px;
+    font-weight: 600;
+    color: cyan;
+    margin-bottom: 20px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    font-size: 40px;
+    height: 400px;
+
+}
+input {
+    width: 100%;
+    padding: 15px 5px;
+    border-radius: 10px;
+    background-color: rgb(8, 55, 55);
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+textarea {
+        width: 100%;
+        padding: 5px 5px;
+        border-radius: 10px;
+        background-color: rgb(8, 55, 55);
+        border: none;
+        outline: none;
+        font-size: 20px;
+}
+.submit-btn {
+    width: 100%;
+    border-radius: 10px;
+    background-color: cyan;
+    height: 60px;
+    box-shadow: 0 0 5px cyan;
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    transform: scale(.9);
+}
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-header{
+        margin-top: 50px;
+    }
+    .left-hand-contact {
+        margin: 0;
+        width: 90%;
+    
+        margin-bottom: 50px;
+    }
+    .right-hand-contact {
+        margin: 0;
+        width: 90%;
+    }
+}

@@ -1,0 +1,108 @@
+.about {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    justify-content: space-around;
+    align-items: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.right-hand-about {
+    width: 600px;
+    color: white;
+    font-weight: 500;
+
+}
+.header p {
+    font-size: 40px;
+    font-weight: 600;
+}
+.header p span {
+    color: cyan;
+}
+.title h3 {
+    font-weight: 50px;
+    margin: 9px 0;
+}
+.about-me-txt {
+    color: cyan;
+    font-size: 15px;
+    font-weight: 500;
+}
+.more-btn {
+    margin-top: 30px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: .9s;
+    cursor: pointer;
+}
+.more-btn:hover{
+    background-color: cyan;
+    font-weight: bold;
+}
+.left-hand-about {
+    width: 230px;
+    height: 230px;
+    background-color: yellowgreen;
+    object-fit: fill;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid rgb(108, 105, 141);
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 5px 0 100px ;
+}
+.left-hand-about img {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    
+}
+@media (max-width: 760px) {
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        height: 100vh;
+
+    
+    }
+    .right-hand-about{
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 100%;
+    }
+    .left-hand-about {
+        
+        width: 230px;
+        height: 235px;
+        
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .left-hand-about img {
+        display: none;
+    }
+    .more-btn {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 460px) {
+    .about {
+        margin-bottom: 10px;
+    }
+}

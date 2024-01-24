@@ -1,0 +1,122 @@
+.service {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+.service-header {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.service-header span {
+    color: cyan;
+}
+.my-cards{
+    display: flex;
+    
+    flex-wrap: wrap;
+
+}
+.card {
+    width: 300px;
+    height: 220px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 8px;
+    padding: 0 10px;
+    background: rgb(3, 3, 41);
+    border-radius: 20px;
+    box-shadow: 0 0 5px blue, 0 0 25px blue;
+    transition: .5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px blue, 0 0 25px blue, 5px 0 100px blue;
+}
+.service-icon {
+    font-size: 25px;
+}
+.service h4 {
+    margin: 10px 0;
+}
+.service-more-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.service-more-btn:hover {
+    background-color: cyan;
+    font-weight: bold;
+}
+@media (max-width: 760px) {
+    /* .card {
+        display: none;
+    } */
+
+    .my-cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .card {
+        margin: 8px 0;
+    }
+    .service {
+        height: auto;
+    }
+    .service-header {
+        margin-bottom: 15px;
+        font-size: 25px;
+        margin-top: 60px;
+    }
+}
+#card1 {
+    position: relative;
+    transform: rotate(1140deg);
+    left: -110%;
+    animation: rotate1 2s forwards; 
+}
+#card2 {
+    position: relative;
+    transform: rotate(-1140deg);
+    right: -110%;
+    animation: rotate2 2s forwards; 
+}
+#card3 {
+    opacity: 0;
+    animation: rotate3 5s forwards; 
+}
+@keyframes rotate1 {
+    100% {
+        left: 0;
+        transform: rotate(0);
+    }
+}
+@keyframes rotate2 {
+    100% {
+        right: 0;
+        transform: rotate(0);
+    }
+}
+@keyframes rotate3 {
+    100% {
+        opacity: 1;
+    }
+}
+
